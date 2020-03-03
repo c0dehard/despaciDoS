@@ -9,6 +9,7 @@ class despaciDoS:
     def __init__(self,ip=0,port=0,thread=0,usertext=None):
         """
         Make sure your port is between 0 and 65535
+        if you exceed the range the port will be set to min or max
         """
         self._ip = ip
         self._port = port
